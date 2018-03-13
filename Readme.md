@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Никита Прокопенко](https://up.htmlacademy.ru/htmlcss/20/user/583029).
-* Наставник: [Роман Духницький](https://htmlacademy.ru/profile/id59884).
+* Наставник: [Полина Катышева](https://htmlacademy.ru/profile/polina).
 
 ---
 
