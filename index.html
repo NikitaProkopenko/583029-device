@@ -8,7 +8,11 @@
         <header class="main-header">
             <nav class="main-menu">
                 <b class="logo">DEVICE</b>
-                <!-- Форма поиска по сайту -->
+                <form class="search" action="https://echo.htmlacademy.ru" method="post">
+                    <input type="image" src="img/icons/search.svg" name="search-icon" alt="Поиск">
+                    <label class="visually-hidden" for="search">Поиск</label>
+                    <input type="search" id="search" name="search" placeholder="Поиск по сайту">
+                </form>
                 <ul class="user-menu">
                     <li class="user-menu-item"><a href="login.html">Войти</a></li>
                     <li class="user-menu-item"><a href="compare.html">Сравнить</a></li>
@@ -238,7 +242,7 @@
                     Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
                     работоспособность покупки. Всякое бывает.
                 </p>
-                <a href="map-modal.html">
+                <a href="#map-big-modal">
                     <img src="img/contact/map.jpg" weight="560" height="220" alt="Карта">
                 </a>
                 <a href="contacts.html" class="button">Напишите нам</a>
@@ -276,10 +280,29 @@
             </div>
         </footer>
 
-        <section class="modal modal-contact">
-            <!-- Здесь будет форма -->
-            <span class="modal-close">x</span>
-            <button type="submit" class="button button-send">Отправить</button>
-        </section>
+        <div class="modal modal-contact">
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <fieldset class="write-us">
+                    <input type="image" src="img/icons/modal-close.svg" name="modal-close" alt="Закрыть">
+                    <div class="write-us-left">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+                    </div>
+                    <div class="write-us-rigth">
+                        <label for="email">Ваше e-mail:</label>
+                        <input type="text" id="email" name="email" placeholder="email@example.com">
+                    </div>
+                    <div class="write-us-bottom">
+                        <lable for="message">Текст письма:</lable>
+                        <textarea id="message" name="message" rows="5" placeholder="В свободной форме"></textarea>
+                    </div>
+                    <button class="button" type="submit">Отправить</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="map map-modal" id="map-big-modal">
+            <input type="image" src="img/icons/modal-close.svg" name="modal-close" alt="Закрыть">
+        </div>
     </body>
 </html>
