@@ -11,7 +11,7 @@
             <nav class="main-menu">
                 <b class="logo">DEVICE</b>
                 <form class="search" action="https://echo.htmlacademy.ru" method="post">
-                    <input type="image" src="img/icons/search.svg" name="search-icon" alt="Поиск">
+                    <button type="submit" class="search-button">Найти</button>
                     <label class="visually-hidden" for="search">Поиск</label>
                     <input type="search" id="search" name="search" placeholder="Поиск по сайту">
                 </form>
@@ -79,20 +79,16 @@
                         </p>
                         <a href="slide.html" class="slide-info">Подробнее</a>
                         <table class="features">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="features-info">8,5 м</th>
-                                    <th scope="col" class="features-info">5 кг</th>
-                                    <th scope="col" class="features-info">Карбон</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="features-item">Длина палки</td>
-                                    <td class="features-item">Вес палки</td>
-                                    <td class="features-item">Материал</td>
-                                </tr>
-                            </tbody>
+                            <tr>
+                                <td class="features-info">8,5 м</td>
+                                <td class="features-info">5 кг</td>
+                                <td class="features-info">Карбон</td>
+                            </tr>
+                            <tr>
+                                <td class="features-item">Длина палки</td>
+                                <td class="features-item">Вес палки</td>
+                                <td class="features-item">Материал</td>
+                            </tr>
                         </table>
                     </li>
                     <li class="slide-item">
@@ -108,23 +104,18 @@
                         </p>
                         <a href="slide.html" class="slide-info">Подробнее</a>
                         <table class="features">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="features-info">48 часов</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="features-item">Без подзарядки</td>
-                                </tr>
-                            </tbody>
+                            <tr>
+                                <td class="features-info">48 часов</td>
+                            </tr>
+                            <tr>
+                                <td class="features-item">Без подзарядки</td>
+                            </tr>
                         </table>
                     </li>
                     <li class="slide-item">
                         <img src="img/slider/slider-3.png" width="526" height="334" alt="Квадрокоптер">
                         <h2 class="slide-title">
-                            Порхает как бабочка,<br>
-                            жалит как пчела!
+                            Порхает как бабочка, жалит как пчела!
                         </h2>
                         <b class="slide-number">03</b>
                         <p class="slide-description">
@@ -133,30 +124,26 @@
                         </p>
                         <a href="slide.html" class="slide-info">Подробнее</a>
                         <table class="features">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="features-info">800 м</th>
-                                    <th scope="col" class="features-info">50 м</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="features-item">Дальность полета</td>
-                                    <td class="features-item">Радиус поражения</td>
-                                </tr>
-                            </tbody>
+                            <tr>
+                                <td scope="col" class="features-info">800 м</td>
+                                <td scope="col" class="features-info">50 м</td>
+                            </tr>
+                            <tr>
+                                <td class="features-item">Дальность полета</td>
+                                <td class="features-item">Радиус поражения</td>
+                            </tr>
                         </table>
                     </li>
                 </ul>
                 <ul class="slide-switcher-list">
                     <li class="slide-switcher-item">
-                        <button type="button" class="slide-switcher-current"></button>
+                        <button type="button" class="slide-switcher current">Слайд 1</button>
                     </li>
                     <li class="slide-switcher-item">
-                        <button type="button" class="slide-switcher"></button>
+                        <button type="button" class="slide-switcher">Слайд 2</button>
                     </li>
                     <li class="slide-switcher-item">
-                        <button type="button" class="slide-switcher"></button>
+                        <button type="button" class="slide-switcher">Слайд 3</button>
                     </li>
                 </ul>
             </section>

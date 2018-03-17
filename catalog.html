@@ -12,7 +12,7 @@
                     <b class="logo">DEVICE</b>
                 </a>
                 <form class="search" action="https://echo.htmlacademy.ru" method="post">
-                    <input type="image" src="img/icons/search.svg" name="search-icon" alt="Поиск">
+                    <button type="submit" class="search-button">Найти</button>
                     <label class="visually-hidden" for="search">Поиск</label>
                     <input type="search" id="search" name="search" placeholder="Поиск по сайту">
                 </form>
@@ -77,7 +77,6 @@
                 <li class="breadcrumbs-current">Моноподы для селфи</li>
             </ul>
             <section class="filter">
-                <h2 class="visually-hidden">Фильтр товаров</h2>
                 <h3 class="filter-title">Фильтр:</h3>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru"
                     oninput="maxprice.value=price.value">
@@ -151,10 +150,10 @@
                 </ul>
                 <ul class="sort-ranging">
                     <li class="sort-ranging-up">
-                        <a href="#"></a>
+                        <a href="#">По возрастанию</a>
                     </li>
                     <li class="sort-ranging-up">
-                        <a href="#"></a>
+                        <a href="#">По убыванию</a>
                     </li>
                 </ul>
             </section>
@@ -191,11 +190,11 @@
                     </li>
                 </ul>
                 <ul class="pagination-list">
-                    <li class="pagination-item-button">
+                    <li class="pagination-item-back">
                         <a href="#">Назад</a>
                     </li>
-                    <li class="pagination-item">
-                        <a class="pagination-item-current">1</a>
+                    <li class="pagination-item current">
+                        <a href="#">1</a>
                     </li>
                     <li class="pagination-item">
                         <a href="#">2</a>
@@ -203,7 +202,7 @@
                     <li class="pagination-item">
                         <a href="#">3</a>
                     </li>
-                    <li class="pagination-item-button">
+                    <li class="pagination-item-forward">
                         <a href="#">Вперед</a>
                     </li>
                 </ul>
