@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Девайс</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -25,7 +27,8 @@
                     </li>
                 </ul>
                 <ul class="site-menu">
-                    <li class="site-menu-item"><a href="catalog.html">Каталог</a>
+                    <li class="site-menu-item">
+                        <a href="catalog.html">Каталог</a>
                         <ul class="catalog-menu">
                             <li class="catalog-menu-item">
                                 <a href="virtual-reality.html">Виртуальная реальность</a>
@@ -149,37 +152,49 @@
                 <ul class="popular-list">
                     <li class="popular-item">
                         <a href="virtual-reality.html">
-                            <img src="img/popular/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+                            <div class="popular-block">
+                                <img src="img/popular/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+                            </div>
                             Виртуальная реальность
                         </a>
                     </li>
                     <li class="popular-item">
                         <a href="monopods.html">
-                            <img src="img/popular/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+                            <div class="popular-block">
+                                <img src="img/popular/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+                            </div>
                             Моноподы для селфи
                         </a>
                     </li>
                     <li class="popular-item">
                         <a href="action-cameras.html">
-                            <img src="img/popular/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+                            <div class="popular-block">
+                                <img src="img/popular/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+                            </div>
                             Экшн-камеры
                         </a>
                     </li>
                     <li class="popular-item">
                         <a href="fitness-bracelet.html">
-                            <img src="img/popular/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+                            <div class="popular-block">
+                                <img src="img/popular/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+                            </div>
                             Фитнес-браслеты
                         </a>
                     </li>
                     <li class="popular-item">
                         <a href="smart-watches.html">
-                            <img src="img/popular/popular-5.svg" width="56" height="98" alt="Умные часы">
+                            <div class="popular-block">
+                                <img src="img/popular/popular-5.svg" width="56" height="98" alt="Умные часы">
+                            </div>
                             Умные часы
                         </a>
                     </li>
                     <li class="popular-item">
                         <a href="drones.html">
-                            <img src="img/popular/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+                            <div class="popular-block">
+                                <img src="img/popular/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+                            </div>
                             Квадрокоптеры
                         </a>
                     </li>
@@ -257,7 +272,7 @@
                     <li class="info-item">Автотрейдинг</li>
                     <li class="info-item">ЖелДорЭкспедиция</li>
                 </ul>
-                <a href="info.html" class="button">Подробнее о нас</a>
+                <a href="info.html" class="about-button">Подробнее о нас</a>
             </section>
             <section class="contacts">
                 <h3 class="contacts-title">Контакты</h3>
@@ -268,7 +283,7 @@
                 <a href="#map-big-modal">
                     <img src="img/contact/map.jpg" width="560" height="220" alt="Карта">
                 </a>
-                <a href="contacts.html" class="button">Напишите нам</a>
+                <a href="contacts.html" class="write-us-button">Напишите нам</a>
             </section>
         </main>
         <footer class="main-footer">
@@ -287,7 +302,7 @@
                 </ul>
             </div>
             <div class="footer-middle">
-                <span>г. Москва, ул. Строителей, 15</span>
+                <span class="footer-address">г. Москва, ул. Строителей, 15</span>
                 <ul class="footer-site-menu">
                     <li class="footer-site-menu-item">
                         <a href="delivery.html">Доставка</a>
@@ -299,7 +314,7 @@
                         <a href="contacts.html">Контакты</a>
                     </li>
                 </ul>
-                <span>Тел.: +7 (495) 495-95-95</span>
+                <span class="footer-address">Тел.: +7 (495) 495-95-95</span>
             </div>
             <div class="footer-bottom">
                 <ul class="social-buttons">

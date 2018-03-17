@@ -1,0 +1,285 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("fonts/gilroyextrabold.woff") format("woff"),
+        url("fonts/gilroyextrabold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy Light";
+    src: url("fonts/gilroylight.woff") format("woff"),
+        url("fonts/gilroylight.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/opensans.woff") format("woff"),
+        url("fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("fonts/opensanslight.woff") format("woff"),
+        url("fonts/opensanslight.woff2") format("woff2");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Навигации */
+
+.main-menu {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(247, 226, 150, 1);
+}
+
+.logo {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.main-menu a,
+.container a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.user-menu,
+.search {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.catalog-menu {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+}
+
+.user-menu,
+.site-menu,
+.catalog-menu,
+.slide,
+.slide-switcher-list,
+.popular-list,
+.services-switcher,
+.services-list,
+.product-logos-list {
+    list-style: none;
+}
+
+.user-menu a:hover,
+.site-menu a:hover {
+    color: rgba(0, 0, 0, .6);
+}
+
+.user-menu a:focus,
+.site-menu a:focus {
+    color: rgba(0, 0, 0, .3);
+}
+
+/* Слайдера */
+
+.slide-title {
+    font-size: 47px;
+    line-height: 56px;
+}
+
+.slide-description {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.slide-number {
+    font-size: 179.2px;
+    line-height: 179.2px;
+}
+
+.slide-info {
+    font-size: 18px;
+    line-height: 24px;
+    background-color: rgba(240, 197, 46, 1);
+}
+
+.slide-info:focus {
+    color: rgba(0, 0, 0, .3);
+}
+
+.features-info {
+    font-family: "Gilroy Light", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.features-item {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/* Популярное */
+
+.popular-block {
+    background-color: rgba(247, 226, 150, 1);
+}
+.popular-item {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/*  Сервисы */
+
+.service-title {
+    font-size: 47px;
+    line-height: 48px;
+}
+
+.services-description {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.services-button {
+    font-size: 18px;
+    line-height: 24px;
+    background-color: rgba(240, 194, 46, 1);
+}
+
+.services-button:focus {
+    color: rgba(247, 225, 132, 1);
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* О нас */
+
+.info-title {
+    font-size: 47px;
+    line-height: 48px;
+}
+
+.info-description {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.info-list {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.about-button {
+    font-size: 18px;
+    line-height: 24px;
+    background-color: rgba(240, 197, 46, 1);
+}
+
+.about-button:focus {
+    color: rgba(0, 0, 0, .3);
+}
+
+/* Контакты */
+
+.contacts-title {
+    font-size: 47px;
+    line-height: 48px;
+}
+
+.contacts-description {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.write-us-button {
+    font-size: 18px;
+    line-height: 24px;
+    background-color: rgba(240, 197, 46, 1);
+}
+
+.write-us-button:focus {
+    color: rgba(0, 0, 0, .3);
+}
+
+/* Футер */
+
+.main-footer {
+    background-color: rgba(70, 70, 70, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-logo {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: inherit;
+    color: rgba(218, 172, 14, 1);
+}
+
+.footer-logo a:hover {
+    color: rgba(218, 172, 14, .6);
+}
+
+.footer-logo a:focus {
+    color: rgba(218, 172, 14, .3);
+}
+
+.footer-address {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+.footer-user-menu {
+    list-style: none;
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+}
+
+.footer-user-menu-item a {
+    color: rgba(255, 255, 255, .7);
+}
+
+.footer-user-menu-item a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-user-menu-item a:focus {
+    color: rgba(255, 255, 255, .3);
+}
+
+.footer-site-menu {
+    list-style: none;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-site-menu-item a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-site-menu-item a:hover {
+    color: rgba(255, 255, 255, .6);
+}
+
+.footer-site-menu-item a:focus {
+    color: rgba(255, 255, 255, .3);
+}
+
+.social-buttons-item {
+    list-style: none;
+}
+
+.social-buttons-item a {
+    color: rgba(255, 255, 255, .3);
+}
