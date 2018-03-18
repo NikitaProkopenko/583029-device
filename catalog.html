@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Каталог</title>
         <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -78,7 +79,7 @@
             </ul>
             <section class="filter">
                 <h3 class="filter-title">Фильтр:</h3>
-                <form class="filter" method="get" action="https://echo.htmlacademy.ru"
+                <form class="filter-form" method="get" action="https://echo.htmlacademy.ru"
                     oninput="maxprice.value=price.value">
                     <fieldset>
                         <legend>Стоимость</legend>
@@ -135,10 +136,9 @@
                 </form>
             </section>
             <section class="sort">
-                <h2 class="visually-hidden">Сортировка товаров</h2>
                 <h3 class="sort-title">Сортировка:</h3>
                 <ul class="sort-list">
-                    <li class="sort-list-type">
+                    <li class="sort-list-type current">
                         <a href="#">По цене</a>
                     </li>
                     <li class="sort-list-type">
@@ -149,10 +149,10 @@
                     </li>
                 </ul>
                 <ul class="sort-ranging">
-                    <li class="sort-ranging-up">
+                    <li class="sort-ranging-arrow current">
                         <a href="#">По возрастанию</a>
                     </li>
-                    <li class="sort-ranging-up">
+                    <li class="sort-ranging-arrow">
                         <a href="#">По убыванию</a>
                     </li>
                 </ul>

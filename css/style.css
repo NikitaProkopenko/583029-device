@@ -283,3 +283,234 @@ a {
 .social-buttons-item a {
     color: rgba(255, 255, 255, .3);
 }
+
+/* Фома обратной связи */
+
+.write-us label {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.button-send {
+    font-size: 18px;
+    line-height: 24px;
+    background-color: rgba(240, 197, 46, 1);
+}
+
+.button-send:focus {
+    color: rgba(0, 0, 0, .3);
+}
+
+.write-us input,
+.write-us textarea {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.write-us input:hover,
+.write-us textarea:hover {
+    background-color: rgba(234, 234, 234, 1);
+}
+
+.write-us input:focus,
+.write-us textarea:focus {
+    color: rgba(70, 70, 70, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border: 3px solid  rgba(247, 226, 150, .5);
+}
+
+.write-us input:invalid,
+.write-us textarea:invalid {
+    background-color: rgba(246, 218, 218, .5);
+}
+
+/* Каталог */
+
+/* Фильтр */
+
+.page-title {
+    font-size: 47px;
+    line-height: 48px;
+}
+
+.breadcrumbs {
+    list-style: none;
+
+}
+
+.breadcrumbs-item a,
+.breadcrumbs-current {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, .3);
+}
+
+.breadcrumbs-item a:hover {
+    color: rgba(0, 0, 0, .6);
+}
+
+.breadcrumbs-item a:focus {
+    color: rgba(0, 0, 0, .1);
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter {
+    background-color: rgba(239, 239, 239, 1)
+}
+
+.filter-title,
+.sort-title {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.filter-form legend {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.filter-option,
+.filter-option-radio,
+.sort-ranging {
+    list-style: none;
+    line-height: 18px;
+}
+
+.filter-checkbox label,
+.filter-radio label {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.filter-button {
+    font-size: 18px;
+    line-height: 24px;
+    background-color: rgba(240, 197, 46, 1);
+}
+
+.filter-button:focus {
+    color: rgba(0, 0, 0, .3);
+}
+
+/* Сортировка */
+
+.sort {
+    background-color: rgba(235, 235, 235, 1);
+}
+
+.sort-list {
+    list-style: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.sort-list-type a {
+    color: rgba(0, 0, 0, .3);
+}
+
+.sort-list-type a:hover {
+    color: rgba(0, 0, 0, .6);
+}
+
+.sort-list-type.current a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.sort-ranging-arrow.current a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.sort-ranging-arrow a {
+    color: rgba(0, 0, 0, .2);
+}
+
+.sort-ranging-arrow a:hover {
+    color: rgba(0, 0, 0, .2);
+}
+
+/* Каталог товаров */
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item-title {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.catalog-item-price {
+    font-family: "Gilroy Light", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button-basket {
+    font-size: 18px;
+    line-height: 24px;
+    background-color: rgba(240, 197, 46, 1);
+}
+
+.button-basket:focus {
+    color: rgba(0, 0, 0, .3);
+}
+
+.button-compare {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 36px;
+    color: rgba(164, 164, 164, .5);
+}
+
+.button-compare:hover {
+    color: rgba(164, 164, 164, 1);
+}
+
+.button-compare:focus {
+    color: rgba(164, 164, 164, .2);
+}
+
+/* Кнопки пагинации */
+
+.pagination-list {
+    list-style: none;
+    background-color: rgba(164, 164, 164, .08);
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.pagination-item-back a:hover,
+.pagination-item-forward a:hover {
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.pagination-item-back a:focus,
+.pagination-item-forward a:focus {
+    color: rgba(0, 0, 0, .3);
+}
+
+.pagination-item.current a{
+    color: rgba(0, 0, 0, 1);
+}
+
+.pagination-item a{
+    color: rgba(0, 0, 0, .3);
+}
+
+.pagination-item a:hover{
+    color: rgba(0, 0, 0, .6);
+}
+
+.pagination-item a:focus{
+    color: rgba(0, 0, 0, 1);
+}
