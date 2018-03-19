@@ -26,8 +26,9 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 1160px;
 
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
@@ -43,11 +44,52 @@ a {
 .main-menu {
     color: rgba(0, 0, 0, 1);
     background-color: rgba(247, 226, 150, 1);
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 0 60px;
+}
+
+.main-menu-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-menu {
+    width: 500px;
+    margin: 0;
+    display: flex;
+}
+
+.user-menu-item {
+    width: 100px;
+    display: inline-block;
+    padding-left: 25px;
+    margin-right: 20px;
+    text-align: end;
+}
+
+.user-menu-item:last-child {
+    margin-right: 0;
+}
+
+.user-menu-item:first-child {
+    margin-right: auto;
+    text-align: start;
+}
+
+.site-menu {
+    width: 1040px;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .logo {
     font-size: 48px;
     line-height: 48px;
+    margin-top: -24px;
 }
 
 .main-menu a,
