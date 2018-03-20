@@ -28,7 +28,6 @@
 body {
     margin: 0 auto;
     padding: 0;
-    width: 1160px;
 
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
@@ -39,7 +38,33 @@ a {
     text-decoration: none;
 }
 
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.user-menu,
+.site-menu,
+.catalog-menu,
+.slide,
+.slide-switcher-list,
+.popular-list,
+.services-switcher,
+.services-list,
+.product-logos-list,
+.site-menu-first-list,
+.site-menu-second-list {
+    list-style: none;
+}
+
 /* Навигации */
+
+.logo {
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: -24px;
+    letter-spacing: 0.01em;
+}
 
 .main-menu {
     color: rgba(0, 0, 0, 1);
@@ -51,9 +76,18 @@ a {
     padding: 0 60px;
 }
 
+.main-menu-top {
+    margin-bottom: 20px;
+}
+
 .main-menu-center {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.main-menu-bottom {
+    margin-bottom: 160px;
 }
 
 .user-menu {
@@ -68,6 +102,7 @@ a {
     padding-left: 25px;
     margin-right: 20px;
     text-align: end;
+    letter-spacing: 0.01em;
 }
 
 .user-menu-item:last-child {
@@ -84,12 +119,40 @@ a {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-between;
 }
 
-.logo {
-    font-size: 48px;
-    line-height: 48px;
-    margin-top: -24px;
+.site-menu-item,
+.site-menu-second-item {
+    letter-spacing: 0.2em;
+}
+
+.site-menu-first-list {
+    margin: 0;
+    padding: 0;
+}
+
+.site-menu-second-list {
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.site-menu-second-item {
+    padding-right: 40px;
+    text-align: end;
+}
+
+.site-menu-second-item:first-child {
+    text-align: start;
+}
+
+.site-menu-second-item:last-child {
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: -0.2em;
 }
 
 .main-menu a,
@@ -108,18 +171,6 @@ a {
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
-}
-
-.user-menu,
-.site-menu,
-.catalog-menu,
-.slide,
-.slide-switcher-list,
-.popular-list,
-.services-switcher,
-.services-list,
-.product-logos-list {
-    list-style: none;
 }
 
 .user-menu a:hover,
