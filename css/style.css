@@ -38,6 +38,14 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+
 .container {
     width: 1160px;
     margin: 0 auto;
@@ -130,6 +138,7 @@ a {
 .site-menu-first-list {
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
 }
 
 .site-menu-second-list {
@@ -138,6 +147,7 @@ a {
     padding: 0;
     display: flex;
     flex-flow: row wrap;
+    text-transform: uppercase;
 }
 
 .site-menu-second-item {
@@ -184,10 +194,39 @@ a {
 }
 
 /* Слайдера */
+.slider {
+    width: 1040px;
+    margin: -100px auto 0;
+    position: relative;
+}
+
+.slide {
+    margin: 0;
+    padding: 0;
+}
+
+.slide-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-item-info {
+    width: 500px;
+}
 
 .slide-title {
     font-size: 47px;
     line-height: 56px;
+}
+
+.slide-number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    letter-spacing: 0.01em;
+    margin-top: -25px;
+    margin-right: -0.07em;
+    color: white;
 }
 
 .slide-description {
