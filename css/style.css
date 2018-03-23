@@ -416,28 +416,76 @@ a {
 
 .services-background {
     margin-top: -218px;
+    margin-bottom: 40px;
     height: 288px;
     background-color: rgba(229, 229, 229, 1);
 }
 
-/*  */
+/* Логотипы */
+
+.product-logos {
+    margin-bottom: 80px;
+}
+
+.product-logos-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.product-logos-item {
+    padding-right: 40px;
+}
+
+.product-logos-item:last-child {
+    padding-right: 0;
+}
+
+/* O нас и Контакты */
+
+.contacts-info-block {
+    display: flex;
+}
+
+.black-line {
+    width: 80px;
+    height: 7px;
+    background-color: rgba(0, 0, 0, 1);
+    margin-bottom: 40px;
+}
 
 /* О нас */
 
-.info-title {
+.info-title,
+.contacts-title {
+    margin: 0 0 50px 0;
     font-size: 47px;
     line-height: 48px;
+    letter-spacing: 0.01em;
 }
 
-.info-description {
+.info-description-first,
+.info-description-second {
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
+    letter-spacing: 0.01em;
+}
+
+.info-description-first {
+    margin: 0 0 40px 0;
+}
+
+.info-description-second {
+    margin: 0 0 70px 0;
 }
 
 .info-list {
     font-size: 18px;
     line-height: 24px;
+    margin: 0 0 70px 0;
+    padding: 0;
 }
 
 .about-button {
@@ -461,6 +509,7 @@ a {
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
+    margin: 0 0 40px 0;
 }
 
 .write-us-button {
@@ -471,6 +520,10 @@ a {
 
 .write-us-button:focus {
     color: rgba(0, 0, 0, .3);
+}
+
+.contacts img {
+    margin-bottom: 46px;
 }
 
 /* Футер */
