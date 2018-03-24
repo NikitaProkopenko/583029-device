@@ -416,7 +416,7 @@ a {
 
 .services-background {
     margin-top: -218px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     height: 288px;
     background-color: rgba(229, 229, 229, 1);
 }
@@ -445,7 +445,9 @@ a {
 /* O нас и Контакты */
 
 .contacts-info-block {
+    margin-bottom: 80px;
     display: flex;
+    justify-content: space-between;
 }
 
 .black-line {
@@ -456,6 +458,9 @@ a {
 }
 
 /* О нас */
+.info {
+    width: 460px;
+}
 
 .info-title,
 .contacts-title {
@@ -500,6 +505,10 @@ a {
 
 /* Контакты */
 
+.contacts {
+    width: 560px;
+}
+
 .contacts-title {
     font-size: 47px;
     line-height: 48px;
@@ -523,7 +532,7 @@ a {
 }
 
 .contacts img {
-    margin-bottom: 46px;
+    margin-bottom: 75px;
 }
 
 /* Футер */
@@ -531,6 +540,28 @@ a {
 .main-footer {
     background-color: rgba(70, 70, 70, 1);
     color: rgba(255, 255, 255, 1);
+}
+
+.footer-top {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 55px;
 }
 
 .footer-logo {
@@ -554,10 +585,25 @@ a {
     line-height: 30px;
 }
 .footer-user-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
     list-style: none;
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
+}
+
+.footer-user-menu-item {
+    display: inline-block;
+    padding-left: 25px;
+    margin-right: 45px;
+    text-align: end;
+    letter-spacing: 0.01em;
+}
+
+.footer-user-menu-item:last-child {
+    margin-right: 0;
 }
 
 .footer-user-menu-item a {
@@ -576,10 +622,16 @@ a {
     list-style: none;
     font-size: 18px;
     line-height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-site-menu-item a {
     color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.2em;
 }
 
 .footer-site-menu-item a:hover {
@@ -590,12 +642,31 @@ a {
     color: rgba(255, 255, 255, .3);
 }
 
+.social-buttons {
+    width: 156px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
 .social-buttons-item {
     list-style: none;
 }
 
 .social-buttons-item a {
     color: rgba(255, 255, 255, .3);
+}
+
+.footer-yellow-line {
+    width: 80px;
+    height: 7px;
+    background-color: rgba(255, 198, 0, 1);
+}
+
+.footer-copyright {
+    margin: 0;
+    padding: 0;
 }
 
 /* Форма обратной связи */
