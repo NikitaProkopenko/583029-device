@@ -109,11 +109,48 @@ a {
 }
 
 .user-menu-item {
+    position: relative;
     display: inline-block;
     padding-left: 25px;
     margin-right: 20px;
     text-align: end;
     letter-spacing: 0.01em;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-image: url("../img/icons/user.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+.compare::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-image: url("../img/icons/compare.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+.basket::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-image: url("../img/icons/cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
 }
 
 .logout {
@@ -142,10 +179,30 @@ a {
     letter-spacing: 0.2em;
 }
 
+.site-menu-item {
+    position: relative;
+    padding-right: 25px;
+}
+
 .site-menu-first-list {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+}
+
+
+
+.catalog-plus::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    background-image: url("../img/icons/plus.png");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    opacity: 0.3;
 }
 
 .site-menu-second-list {
@@ -192,12 +249,12 @@ a {
 
 .user-menu a:hover,
 .site-menu a:hover {
-    color: rgba(0, 0, 0, .6);
+    opacity: 0.6;
 }
 
 .user-menu a:focus,
 .site-menu a:focus {
-    color: rgba(0, 0, 0, .3);
+    opacity: 0.3;
 }
 
 /* Слайдера */
@@ -308,6 +365,19 @@ a {
     position: absolute;
     top: 305px;
     right: 0;
+}
+
+.slide-switcher.current::before {
+    content: "";
+    display: block;
+    /* position: absolute; */
+    top: 10%;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    background-image: url("../img/slider/slider-button.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
 }
 
 /* Популярное */
