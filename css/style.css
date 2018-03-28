@@ -425,6 +425,10 @@ a {
     background-color: rgba(240, 197, 46, 1);
 }
 
+.popular-block:active img {
+    opacity: 0.3;
+}
+
 .popular-item:nth-child(2) img {
     margin-bottom: -42px;
 }
@@ -459,10 +463,12 @@ a {
     display: flex;
     flex-flow: column;
     border-right: 7px solid black;
+    justify-content: center;
 }
 
 .services-switcher-item {
     width: 280px;
+    margin-bottom: 20px;
 }
 
 .services-item {
@@ -511,12 +517,33 @@ a {
     line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 0.01em;
-    background-color: rgba(240, 194, 46, 1);
+    display: inline-block;
+    width: 162px;
+    text-align: center;
+    padding: 10px 0;
+    background-image: linear-gradient(to top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(240, 197, 46, 1) 40%,
+    rgba(240, 197, 46, 1) 60%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0) 100%);
+}
+
+.services-button:hover {
+    background-image: linear-gradient(to top,
+    rgba(240, 197, 46, 1) 0%,
+    rgba(240, 197, 46, 1) 100%);
 }
 
 .services-button:focus {
+    width: 248px;
+    text-align: left;
+    padding-left: 38px;
     color: rgba(247, 225, 132, 1);
-    background-color: rgba(0, 0, 0, 1);
+    background-image: linear-gradient(to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%);
 }
 
 .services-background {
@@ -598,13 +625,36 @@ a {
     padding: 0;
 }
 
-.about-button {
+.about-button,
+.write-us-button {
     font-size: 18px;
     line-height: 24px;
     background-color: rgba(240, 197, 46, 1);
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 260px;
+    background-image: linear-gradient(to top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(240, 197, 46, 1) 40%,
+    rgba(240, 197, 46, 1) 60%,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(255, 255, 255, 1) 100%);
 }
 
-.about-button:focus {
+.about-button:hover,
+.write-us-button:hover {
+    color: rgba(0, 0, 0, 1);
+    background-image: linear-gradient(to top,
+    rgba(240, 197, 46, 1) 0%,
+    rgba(240, 197, 46, 1) 100%);
+}
+
+.about-button:focus,
+.write-us-button:focus {
     color: rgba(0, 0, 0, .3);
 }
 
@@ -624,16 +674,6 @@ a {
     font-size: 15px;
     line-height: 30px;
     margin: 0 0 40px 0;
-}
-
-.write-us-button {
-    font-size: 18px;
-    line-height: 24px;
-    background-color: rgba(240, 197, 46, 1);
-}
-
-.write-us-button:focus {
-    color: rgba(0, 0, 0, .3);
 }
 
 .contacts img {
