@@ -245,6 +245,25 @@ a {
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
+    letter-spacing: 0.01em;
+    position: absolute;
+    display: flex;
+    padding: 30px 60px;
+    margin: 0 0 0 -60px;
+    width: 1040px;
+    background-color: rgba(247, 226, 150, 1);
+    z-index: 3;
+    text-transform: none;
+}
+
+.catalog-menu-col-one,
+.catalog-menu-col-two,
+.catalog-menu-col-three {
+    padding-right: 40px;
+}
+
+.catalog-menu-off {
+    display: none;
 }
 
 .user-menu a:hover,
@@ -425,6 +444,10 @@ a {
     background-color: rgba(240, 197, 46, 1);
 }
 
+.popular-item a:focus {
+    color: rgba(0, 0, 0, .3);
+}
+
 .popular-block:active img {
     opacity: 0.3;
 }
@@ -568,6 +591,55 @@ a {
 
 .product-logos-item {
     padding-right: 40px;
+    position: relative;
+    width: 240px;
+    height: 100px;
+}
+
+.logo-dji::before,
+.logo-sp-gadgets::before,
+.logo-gopro::before,
+.logo-vive::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.logo-dji::before {
+    background-image: url("../img/logo/logo-1-mono.png");
+}
+
+.logo-dji:hover::before {
+    background-image: url("../img/logo/logo-1.png");
+}
+
+.logo-sp-gadgets::before {
+    background-image: url("../img/logo/logo-2-mono.png");
+}
+
+.logo-sp-gadgets:hover::before {
+    background-image: url("../img/logo/logo-2.png");
+}
+
+.logo-gopro::before {
+    background-image: url("../img/logo/logo-3-mono.png");
+}
+
+.logo-gopro:hover::before {
+    background-image: url("../img/logo/logo-3.png");
+}
+
+.logo-vive::before {
+    background-image: url("../img/logo/logo-4-mono.png");
+}
+
+.logo-vive:hover::before {
+    background-image: url("../img/logo/logo-4.png");
 }
 
 .product-logos-item:last-child {
@@ -615,7 +687,7 @@ a {
 }
 
 .info-description-second {
-    margin: 0 0 70px 0;
+    margin: 0 0 40px 0;
 }
 
 .info-list {
@@ -623,6 +695,15 @@ a {
     line-height: 24px;
     margin: 0 0 70px 0;
     padding: 0;
+    list-style: circle inside;
+}
+
+.info-item {
+    padding-bottom: 15px;
+}
+
+.info-item:last-child {
+    padding-bottom: 0;
 }
 
 .about-button,
@@ -713,15 +794,15 @@ a {
     font-size: 48px;
     line-height: 48px;
     letter-spacing: inherit;
-    color: rgba(218, 172, 14, 1);
+    color: rgba(255, 198, 0, 1);
 }
 
 .footer-logo a:hover {
-    color: rgba(218, 172, 14, .6);
+    color: rgba(255, 198, 0, .6);
 }
 
 .footer-logo a:focus {
-    color: rgba(218, 172, 14, .3);
+    color: rgba(255, 198, 0, .3);
 }
 
 .footer-address {
@@ -740,15 +821,25 @@ a {
 }
 
 .footer-user-menu-item {
+    position: relative;
     display: inline-block;
-    padding-left: 25px;
     margin-right: 45px;
     text-align: end;
     letter-spacing: 0.01em;
 }
 
+.login-footer,
+.compare-footer,
+.basket-footer {
+    fill: #ffc600;
+}
+
 .footer-user-menu-item:last-child {
     margin-right: 0;
+}
+
+.footer-user-menu-item svg {
+    padding-right: 13px;
 }
 
 .footer-user-menu-item a {
@@ -759,8 +850,20 @@ a {
     color: rgba(255, 255, 255, 1);
 }
 
+a:hover .login-footer,
+a:hover .compare-footer,
+a:hover .basket-footer {
+    opacity: 0.6;
+}
+
 .footer-user-menu-item a:focus {
     color: rgba(255, 255, 255, .3);
+}
+
+a:focus .login-footer,
+a:focus .compare-footer,
+a:focus .basket-footer {
+    opacity: 0.3;
 }
 
 .footer-site-menu {
@@ -800,7 +903,15 @@ a {
 }
 
 .social-buttons-item a {
-    color: rgba(255, 255, 255, .3);
+    opacity: 0.3;
+}
+
+.social-buttons-item a:hover {
+    opacity: 0.6;
+}
+
+.social-buttons-item a:focus {
+    opacity: 0.1;
 }
 
 .footer-yellow-line {
@@ -812,6 +923,18 @@ a {
 .footer-copyright {
     margin: 0;
     padding: 0;
+}
+
+a .button-copyright {
+    fill: rgba(255, 198, 0, 1);
+}
+
+ a:hover .button-copyright {
+    fill: rgba(255, 198, 0, .6);
+}
+
+a:focus .button-copyright {
+    fill: rgba(255, 198, 0, .3);
 }
 
 /* Форма обратной связи */
