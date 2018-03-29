@@ -1527,8 +1527,9 @@ a:focus .button-copyright {
     padding-bottom: 23px;
 }
 
-.pagination-item-back {
-    margin-left: 30px;
+.pagination-item-back a {
+    display: block;
+    padding: 23px 30px;
 }
 
 .pagination-item-forward {
