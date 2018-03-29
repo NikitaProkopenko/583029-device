@@ -114,12 +114,12 @@
                             </li>
                         </ul>
                         <ul class="sort-ranging">
-                            <li class="sort-ranging-arrow current">
+                            <li class="sort-ranging-arrow">
                                 <a href="#">
                                     <span class="visually-hidden">По возрастанию</span>
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                         width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-                                    <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+                                    <polygon class="current" fill="#231F20" points="5.5,0 0,10 11,10 "/>
                                     </svg>
                                 </a>
                             </li>
@@ -142,13 +142,17 @@
                         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru"
                             oninput="maxprice.value=price.value">
                             <fieldset>
-                                <legend>Стоимость</legend>
-                                <span>от 0</span>
-                                <input type="range" id="price" name="price" min="0" max="5000" step="100">
-                                <span>до </span><output name="maxprice"></output>
+                                <h3>Стоимость</h3>
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="range-toggle range-toggle-min"></div>
+                                    <div class="range-toggle range-toggle-max"></div>
+                                </div>
                             </fieldset>
                             <fieldset>
-                                <legend>Цвет</legend>
+                                <h3>Цвет</h3>
                                 <ul class="filter-option">
                                     <li class="filter-checkbox">
                                         <input class="visually-hidden filter-input-checkbox"
@@ -171,14 +175,14 @@
                                         <label for="red">Красный</label>
                                     </li>
                                     <li class="filter-checkbox">
-                                        <input class="visually-hidden filter-input-checkbox"
+                                        <input class="visually-hidden filter-input-checkbox blocked"
                                             type="checkbox" name="pink" id="pink">
-                                        <label for="pink">Розовый</label>
+                                        <label for="pink" class="blocked">Розовый</label>
                                     </li>
                                 </ul>
                             </fieldset>
                             <fieldset>
-                                <legend>Bluetooth</legend>
+                                <h3>Bluetooth</h3>
                                 <ul class="filter-option-radio">
                                     <li class="filter-radio">
                                         <input class="visually-hidden filter-input-radio" type="radio" name="bluetooth"
@@ -192,7 +196,7 @@
                                     </li>
                                 </ul>
                             </fieldset>
-                            <button type="submit" class="filter-button button">Показать</button>
+                            <button type="submit" class="filter-button">Показать</button>
                         </form>
                     </section>
                     <section class="catalog">

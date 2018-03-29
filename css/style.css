@@ -777,7 +777,8 @@ a {
 }
 
 .about-button,
-.write-us-button {
+.write-us-button,
+.filter-button {
     font-size: 18px;
     line-height: 24px;
     background-color: rgba(240, 197, 46, 1);
@@ -796,8 +797,21 @@ a {
     rgba(255, 255, 255, 1) 100%);
 }
 
+.filter-button {
+    width: 200px;
+    border: none;
+    background-image: linear-gradient(to top,
+    rgba(239, 239, 239, 1) 0%,
+    rgba(239, 239, 239, 1) 40%,
+    rgba(240, 197, 46, 1) 40%,
+    rgba(240, 197, 46, 1) 60%,
+    rgba(239, 239, 239, 1) 60%,
+    rgba(239, 239, 239, 1) 100%);
+}
+
 .about-button:hover,
-.write-us-button:hover {
+.write-us-button:hover,
+.filter-button:hover {
     color: rgba(0, 0, 0, 1);
     background-image: linear-gradient(to top,
     rgba(240, 197, 46, 1) 0%,
@@ -805,7 +819,8 @@ a {
 }
 
 .about-button:focus,
-.write-us-button:focus {
+.write-us-button:focus,
+.filter-button:focus {
     color: rgba(0, 0, 0, .3);
 }
 
@@ -1109,12 +1124,28 @@ a:focus .button-copyright {
     color: rgba(0, 0, 0, .3);
 }
 
+.breadcrumbs-item {
+    position: relative;
+}
+
 .breadcrumbs-item a:hover {
     color: rgba(0, 0, 0, .6);
 }
 
 .breadcrumbs-item a:focus {
     color: rgba(0, 0, 0, .1);
+}
+
+.breadcrumbs-item a::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 6px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icons/nav-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
 }
 
 .filter {
@@ -1149,13 +1180,23 @@ a:focus .button-copyright {
     background-color: #dcdcdc;
 }
 
-.filter-form fieldset {
-    padding: 0;
+.filter-form {
+    width: 200px;
 }
 
-.filter-form legend {
+
+.filter-form fieldset {
+    padding: 0;
+    box-sizing: border-box;
+    border-top: 2px solid rgba(0, 0, 0, 1);
+}
+
+.filter-form h3 {
     font-size: 18px;
     line-height: 24px;
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding: 15px 0 0 0;
 }
 
 .filter-option,
@@ -1165,6 +1206,11 @@ a:focus .button-copyright {
     line-height: 18px;
 }
 
+.filter-option,
+.filter-option-radio {
+    margin-bottom: 45px;
+}
+
 .filter-checkbox label,
 .filter-radio label {
     font-family: "Open Sans Light", Arial, sans-serif;
@@ -1172,14 +1218,127 @@ a:focus .button-copyright {
     line-height: 40px;
 }
 
-.filter-button {
-    font-size: 18px;
-    line-height: 24px;
-    background-color: rgba(240, 197, 46, 1);
+/* Ползунки фильтра */
+
+.range-controls {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 70px;
 }
 
-.filter-button:focus {
-    color: rgba(0, 0, 0, .3);
+.range-controls .scale {
+    height: 2px;
+    background: rgba(219, 219, 219, 1);
+}
+
+.range-controls .bar {
+    width: 60%;
+    height: 2px;
+    background: rgba(145, 201, 47, 1);
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: rgba(171, 171, 171, 1);
+    border: 8px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:active {
+    width: 6px;
+    height: 6px;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 60%;
+}
+
+/* Фильтр цветов */
+
+.filter-checkbox,
+.filter-radio {
+    position: relative;
+}
+
+.filter-input-checkbox:checked + label::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -38px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/filter/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -38px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/filter/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label:hover::before,
+.filter-input-checkbox + label:hover::before {
+    opacity: .6;
+}
+
+.filter-input-checkbox.blocked + label::before,
+.filter-input-checkbox.blocked:checked + label::before,
+.filter-checkbox label.blocked {
+    opacity: .3;
+}
+
+/* Фильтр "Есть / Нет" */
+
+.filter-input-radio + label::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -38px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/filter/radio-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-radio:checked + label::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -38px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/filter/radio-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-radio:checked + label:hover::before,
+.filter-input-radio + label:hover::before {
+    opacity: .6;
+}
+
+.filter-input-radio.blocked:checked + label::before,
+.filter-input-radio.blocked + label::before,
+.filter-radio.blocked label {
+    opacity: .3;
 }
 
 /* Сортировка */
@@ -1222,8 +1381,8 @@ a:focus .button-copyright {
     color: rgba(0, 0, 0, 1);
 }
 
-.sort-ranging-arrow.current a {
-    color: rgba(0, 0, 0, 1);
+.sort-ranging-arrow polygon.current {
+    opacity: 0.3;
 }
 
 .sort-ranging-arrow a {
