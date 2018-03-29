@@ -156,6 +156,7 @@ a {
 
 .logout {
     padding-left: 20px;
+    opacity: .3;
 }
 
 .user-menu-item:last-child {
@@ -866,11 +867,18 @@ a {
     color: rgba(255, 198, 0, 1);
 }
 
-.footer-logo a:hover {
+a .footer-logo {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: inherit;
+    color: rgba(255, 198, 0, 1);
+}
+
+a:hover .footer-logo {
     color: rgba(255, 198, 0, .6);
 }
 
-.footer-logo a:focus {
+a:focus .footer-logo {
     color: rgba(255, 198, 0, .3);
 }
 
