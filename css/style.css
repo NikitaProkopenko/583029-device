@@ -778,7 +778,8 @@ a {
 
 .about-button,
 .write-us-button,
-.filter-button {
+.filter-button,
+.button-basket {
     font-size: 18px;
     line-height: 24px;
     background-color: rgba(240, 197, 46, 1);
@@ -797,21 +798,24 @@ a {
     rgba(255, 255, 255, 1) 100%);
 }
 
-.filter-button {
+.filter-button,
+.button-basket {
     width: 200px;
     border: none;
+    background-color: rgba(239, 239, 239, 0);
     background-image: linear-gradient(to top,
-    rgba(239, 239, 239, 1) 0%,
-    rgba(239, 239, 239, 1) 40%,
+    rgba(239, 239, 239, 0) 0%,
+    rgba(239, 239, 239, 0) 40%,
     rgba(240, 197, 46, 1) 40%,
     rgba(240, 197, 46, 1) 60%,
-    rgba(239, 239, 239, 1) 60%,
-    rgba(239, 239, 239, 1) 100%);
+    rgba(239, 239, 239, 0) 60%,
+    rgba(239, 239, 239, 0) 100%);
 }
 
 .about-button:hover,
 .write-us-button:hover,
-.filter-button:hover {
+.filter-button:hover,
+.button-basket:hover {
     color: rgba(0, 0, 0, 1);
     background-image: linear-gradient(to top,
     rgba(240, 197, 46, 1) 0%,
@@ -820,7 +824,8 @@ a {
 
 .about-button:focus,
 .write-us-button:focus,
-.filter-button:focus {
+.filter-button:focus,
+.button-basket:focus {
     color: rgba(0, 0, 0, .3);
 }
 
@@ -1411,6 +1416,7 @@ a:focus .button-copyright {
 }
 
 .catalog-list {
+    position: relative;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -1424,6 +1430,31 @@ a:focus .button-copyright {
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 50px;
+    position: relative;
+}
+
+.catalog-item-hover {
+    display: none;
+}
+
+.catalog-item-1:hover div.catalog-item-hover {
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.catalog-item-1:hover::before,
+.catalog-item-2:hover::before,
+.catalog-item-3:hover::before,
+.catalog-item-4:hover::before {
+    position: absolute;
+    content: "";
+    width: 360px;
+    height: 380px;
+    background-color: rgba(239, 239, 239, 0.7);
+    top: 0;
+    left: 0;
 }
 
 .catalog-item-title {
