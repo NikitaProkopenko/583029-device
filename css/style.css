@@ -1160,6 +1160,11 @@ a:focus .button-copyright {
     border: none;
 }
 
+fieldset {
+    padding: 0;
+    margin: 0;
+}
+
 .filter-title,
 .sort-title {
     margin: 0;
@@ -1185,14 +1190,13 @@ a:focus .button-copyright {
     width: 200px;
 }
 
-
-.filter-form fieldset {
-    padding: 0;
-    box-sizing: border-box;
-    border-top: 2px solid rgba(0, 0, 0, 1);
+.filter-line {
+    width: 200px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 1)
 }
 
-.filter-form h3 {
+.filter-form legend {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.01em;
