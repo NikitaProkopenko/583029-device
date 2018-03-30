@@ -509,7 +509,7 @@ a {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     padding-right: 40px;
-    background-color: none;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .slide-switcher {
@@ -520,7 +520,7 @@ a {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     padding-right: 40px;
-    background-color: none;
+    background-color: rgba(0, 0, 0, 0);
     outline: none;
 }
 
