@@ -807,61 +807,41 @@ a {
     padding-bottom: 0;
 }
 
-.about-button,
-.write-us-button,
-.filter-button,
-.button-basket,
-.button-send {
+.button {
     font-size: 18px;
     line-height: 24px;
-    background-color: rgba(240, 197, 46, 1);
+    background-color: rgba(239, 239, 239, 0);
     display: inline-block;
     padding: 10px 0;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     width: 260px;
+    border: none;
     outline: none;
     background-image: linear-gradient(to top,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 40%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 40%,
     rgba(240, 197, 46, 1) 40%,
     rgba(240, 197, 46, 1) 60%,
-    rgba(255, 255, 255, 1) 60%,
-    rgba(255, 255, 255, 1) 100%);
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0) 100%);
 }
 
 .filter-button,
 .button-basket,
 .button-send {
     width: 200px;
-    border: none;
-    background-color: rgba(239, 239, 239, 0);
-    background-image: linear-gradient(to top,
-    rgba(239, 239, 239, 0) 0%,
-    rgba(239, 239, 239, 0) 40%,
-    rgba(240, 197, 46, 1) 40%,
-    rgba(240, 197, 46, 1) 60%,
-    rgba(239, 239, 239, 0) 60%,
-    rgba(239, 239, 239, 0) 100%);
 }
 
-.about-button:hover,
-.write-us-button:hover,
-.filter-button:hover,
-.button-basket:hover,
-.button-send:hover {
+.button:hover {
     color: rgba(0, 0, 0, 1);
     background-image: linear-gradient(to top,
     rgba(240, 197, 46, 1) 0%,
     rgba(240, 197, 46, 1) 100%);
 }
 
-.about-button:focus,
-.write-us-button:focus,
-.filter-button:focus,
-.button-basket:focus,
-.button-send:focus {
+.button:focus {
     color: rgba(0, 0, 0, .3);
 }
 
