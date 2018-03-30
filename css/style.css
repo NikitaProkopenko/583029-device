@@ -192,27 +192,16 @@ a {
     text-transform: uppercase;
 }
 
-.catalog-plus {
+.catalog-plus::before {
+    content: "";
     position: absolute;
     top: 10%;
     right: 0;
     width: 1em;
     height: 1em;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
     background-image: url("../img/icons/plus.png");
     background-repeat: no-repeat;
     background-position: 0 50%;
-    opacity: .8;
-    outline: none;
-}
-
-.catalog-plus:hover {
-    opacity: .6;
-}
-
-.catalog-plus:focus {
-    opacity: .3;
 }
 
 .site-menu-second-list {
@@ -325,7 +314,15 @@ a {
     padding-right: 40px;
 }
 
-.catalog-menu {
+.extra-catalog {
+    position: relative;
+}
+
+.catalog-menu-off {
+    display: none;
+}
+
+.site-menu-item:hover ul.catalog-menu.catalog-menu-off {
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
@@ -338,10 +335,6 @@ a {
     background-color: rgba(247, 226, 150, 1);
     z-index: 3;
     text-transform: none;
-}
-
-.catalog-menu-off {
-    display: none;
 }
 
 .user-menu a:hover,
@@ -1395,16 +1388,17 @@ a:focus .button-copyright {
     color: rgba(0, 0, 0, 1);
 }
 
-.sort-ranging-arrow polygon.current {
+.sort-ranging-arrow {
+    padding-right: 20px;
     opacity: 0.3;
 }
 
-.sort-ranging-arrow a {
-    color: rgba(0, 0, 0, .2);
+.sort-ranging-arrow:hover {
+    opacity: .6;
 }
 
-.sort-ranging-arrow {
-    padding-right: 20px;
+.sort-ranging-arrow:active {
+    opacity: 1;
 }
 
 .sort-ranging-arrow:last-child {
@@ -1446,7 +1440,7 @@ a:focus .button-copyright {
     display: none;
 }
 
-.catalog-item:hover div.catalog-item.active{
+.catalog-item:hover div.catalog-item.active {
     position: absolute;
     display: flex;
     flex-flow: column;
