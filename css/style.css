@@ -509,6 +509,7 @@ a {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     padding-right: 40px;
+    background-color: none;
 }
 
 .slide-switcher {
@@ -519,6 +520,8 @@ a {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     padding-right: 40px;
+    background-color: none;
+    outline: none;
 }
 
 /* Популярное */
@@ -920,18 +923,18 @@ a {
     color: rgba(255, 198, 0, 1);
 }
 
-a .footer-logo {
+a.footer-logo {
     font-size: 48px;
     line-height: 48px;
     letter-spacing: inherit;
     color: rgba(255, 198, 0, 1);
 }
 
-a:hover .footer-logo {
+a:hover.footer-logo {
     color: rgba(255, 198, 0, .6);
 }
 
-a:focus .footer-logo {
+a:focus.footer-logo {
     color: rgba(255, 198, 0, .3);
 }
 
@@ -1185,12 +1188,9 @@ a:focus .button-copyright {
 }
 
 .filter fieldset {
-    border: none;
-}
-
-fieldset {
     padding: 0;
     margin: 0;
+    border: none;
 }
 
 .filter-title,
