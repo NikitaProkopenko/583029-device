@@ -118,7 +118,8 @@ a {
     letter-spacing: 0.01em;
 }
 
-.login::before {
+.login::before,
+.login-footer::before {
     content: "";
     position: absolute;
     top: 25%;
@@ -130,7 +131,12 @@ a {
     background-position: 0 50%;
 }
 
-.compare::before {
+.login-footer::before {
+    background-image: url("../img/icons/user-footer.svg");
+}
+
+.compare::before,
+.compare-footer::before {
     content: "";
     position: absolute;
     top: 25%;
@@ -142,7 +148,12 @@ a {
     background-position: 0 50%;
 }
 
-.basket::before {
+.compare-footer::before {
+    background-image: url("../img/icons/compare-footer.svg");
+}
+
+.basket::before,
+.basket-footer::before {
     content: "";
     position: absolute;
     top: 25%;
@@ -152,6 +163,22 @@ a {
     background-image: url("../img/icons/cart.svg");
     background-repeat: no-repeat;
     background-position: 0 50%;
+}
+
+.basket-footer::before {
+    background-image: url("../img/icons/cart-footer.svg");
+}
+
+.login-footer:hover::before,
+.compare-footer:hover::before,
+.basket-footer:hover::before {
+    opacity: .6;
+}
+
+.login-footer:focus::before,
+.compare-footer:focus::before,
+.basket-footer:focus::before {
+    opacity: .3;
 }
 
 .logout {
@@ -929,6 +956,7 @@ a:focus .footer-logo {
     margin-right: 45px;
     text-align: end;
     letter-spacing: 0.01em;
+    padding-left: 25px;
 }
 
 .login-footer,
