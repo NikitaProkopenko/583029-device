@@ -451,31 +451,36 @@
                 </div>
             </div>
         </footer>
-<!--
-        <div class="modal modal-contact">
+
+        <div class="modal modal-contact modal-off">
             <form action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="write-us">
-                    <input type="image" src="img/icons/modal-close.svg" name="modal-close" alt="Закрыть">
-                    <div class="write-us-left">
-                        <label for="name">Ваше имя:</label>
-                        <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-                    </div>
-                    <div class="write-us-rigth">
-                        <label for="email">Ваше e-mail:</label>
-                        <input type="text" id="email" name="email" placeholder="email@example.com">
+                    <button class="modal-close-button" type="button">
+                        <span class="visually-hidden">Закрыть</span>
+                    </button>
+                    <div class="modal-contact-person">
+                        <div class="write-us-left">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+                        </div>
+                        <div class="write-us-rigth">
+                            <label for="email">Ваше e-mail:</label>
+                            <input type="text" id="email" name="email" placeholder="email@example.com">
+                        </div>
                     </div>
                     <div class="write-us-bottom">
-                        <lable for="message">Текст письма:</lable>
-                        <textarea id="message" name="message" rows="5" placeholder="В свободной форме"></textarea>
+                        <label for="message">Текст письма:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="В свободной форме"></textarea>
                     </div>
                     <button class="button-send" type="submit">Отправить</button>
                 </fieldset>
             </form>
         </div>
 
-        <div class="map map-modal" id="map-big-modal">
-            <img src="img/contact/map-big.jpg" width="960" height="559" alt="Большая карта">
-            <input type="image" src="img/icons/modal-close.svg" name="modal-close" alt="Закрыть">
-        </div>-->
+        <div class="modal map-modal modal-off" id="map-big-modal">
+            <button class="modal-close-button" type="button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+        </div>
     </body>
 </html>
