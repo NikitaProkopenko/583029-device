@@ -1619,7 +1619,8 @@ a:focus .button-copyright {
     border: none;
 }
 
-.modal-close-button {
+.modal-close-button,
+.map-close-button {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -1633,11 +1634,13 @@ a:focus .button-copyright {
     opacity: .5;
 }
 
-.modal-close-button:hover {
+.modal-close-button:hover,
+.map-close-button:hover {
     opacity: 1;
 }
 
-.modal-close-button:focus {
+.modal-close-button:focus,
+.map-close-button:focus {
     opacity: .3;
     outline: none;
 }
@@ -1697,8 +1700,7 @@ a:focus .button-copyright {
 }
 
 /* Валидация полей */
-.write-us input[type="text"].invalid,
-.write-us textarea.invalid {
+.invalid {
     background-color: rgba(246, 218, 218, 1);
     border: 3px solid rgba(246, 218, 218, 1);
 }
@@ -1715,6 +1717,19 @@ a:focus .button-copyright {
     height: 559px;
 }
 
+@keyframes bounce {
+    0% { transform: translateY(-2000px); }
+    70% { transform: translateY(30px); }
+    90% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
 .modal-off {
     display: none;
+}
+
+.modal-on {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
 }
