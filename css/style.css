@@ -192,19 +192,27 @@ a {
     text-transform: uppercase;
 }
 
-
-
-.catalog-plus::before {
-    content: "";
+.catalog-plus {
     position: absolute;
     top: 10%;
     right: 0;
     width: 1em;
     height: 1em;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
     background-image: url("../img/icons/plus.png");
     background-repeat: no-repeat;
     background-position: 0 50%;
-    opacity: 0.3;
+    opacity: .8;
+    outline: none;
+}
+
+.catalog-plus:hover {
+    opacity: .6;
+}
+
+.catalog-plus:focus {
+    opacity: .3;
 }
 
 .site-menu-second-list {
@@ -311,6 +319,12 @@ a {
     background-color: rgba(0, 0, 0, 1);
 }
 
+.catalog-menu-col-one,
+.catalog-menu-col-two,
+.catalog-menu-col-three {
+    padding-right: 40px;
+}
+
 .catalog-menu {
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 15px;
@@ -324,12 +338,6 @@ a {
     background-color: rgba(247, 226, 150, 1);
     z-index: 3;
     text-transform: none;
-}
-
-.catalog-menu-col-one,
-.catalog-menu-col-two,
-.catalog-menu-col-three {
-    padding-right: 40px;
 }
 
 .catalog-menu-off {
@@ -789,6 +797,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     width: 260px;
+    outline: none;
     background-image: linear-gradient(to top,
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 255, 255, 1) 40%,
@@ -1433,28 +1442,23 @@ a:focus .button-copyright {
     position: relative;
 }
 
-.catalog-item-hover {
+.catalog-item.active {
     display: none;
 }
 
-.catalog-item-1:hover div.catalog-item-hover {
-    display: block;
+.catalog-item:hover div.catalog-item.active{
     position: absolute;
-    top: 25%;
-    left: 25%;
-}
-
-.catalog-item-1:hover::before,
-.catalog-item-2:hover::before,
-.catalog-item-3:hover::before,
-.catalog-item-4:hover::before {
-    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     content: "";
     width: 360px;
     height: 380px;
     background-color: rgba(239, 239, 239, 0.7);
     top: 0;
     left: 0;
+    z-index: 4
 }
 
 .catalog-item-title {
@@ -1475,29 +1479,33 @@ a:focus .button-copyright {
     justify-content: space-between;
 }
 
-.button-basket {
-    font-size: 18px;
-    line-height: 24px;
-    background-color: rgba(240, 197, 46, 1);
-}
-
-.button-basket:focus {
-    color: rgba(0, 0, 0, .3);
+.new-label {
+    position: absolute;
+    background-image: url("../img/icons/new.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 20px;
+    right: 20px;;
+    width: 70px;
+    height: 70px;
 }
 
 .button-compare {
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 13px;
     line-height: 36px;
-    color: rgba(164, 164, 164, .5);
+    color: rgba(0, 0, 0, .5);
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
 }
 
 .button-compare:hover {
-    color: rgba(164, 164, 164, 1);
+    color: rgba(0, 0, 0, 1);
 }
 
 .button-compare:focus {
-    color: rgba(164, 164, 164, .2);
+    color: rgba(0, 0, 0, .2);
 }
 
 /* Кнопки пагинации */
@@ -1532,8 +1540,9 @@ a:focus .button-copyright {
     padding: 23px 30px;
 }
 
-.pagination-item-forward {
-    margin-right: 30px;
+.pagination-item-forward a {
+    display: block;
+    padding: 23px 30px;
 }
 
 .pagination-item-back a:hover,
