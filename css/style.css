@@ -1236,12 +1236,13 @@ a:focus .button-copyright {
 .range-controls {
     position: relative;
     margin-top: 40px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 
 .range-controls .scale {
     height: 2px;
     background: rgba(219, 219, 219, 1);
+    margin-bottom: 15px;
 }
 
 .range-controls .bar {
@@ -1273,6 +1274,28 @@ a:focus .button-copyright {
 
 .range-toggle-max {
     left: 60%;
+}
+.price-controls {
+    font-size: 0;
+}
+
+.price-controls label {
+    display: inline-block;
+    width: 50%;
+    font-family: "Gilroy Light", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, .2);
+}
+
+.price-controls input {
+    width: 60px;
+    font-family: "Gilroy Light", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, .2);
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 /* Фильтр цветов */
