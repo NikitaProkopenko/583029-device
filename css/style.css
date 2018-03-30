@@ -1078,11 +1078,6 @@ a:focus .button-copyright {
     border: 3px solid  rgba(247, 226, 150, .5);
 }
 
-.write-us input:invalid,
-.write-us textarea:invalid {
-    background-color: rgba(246, 218, 218, .5);
-}
-
 /* Каталог */
 .sort-header {
     display: flex;
@@ -1700,7 +1695,8 @@ a:focus .button-copyright {
 }
 
 /* Валидация полей */
-.invalid {
+.write-us input[type="text"].invalid,
+.write-us textarea.invalid {
     background-color: rgba(246, 218, 218, 1);
     border: 3px solid rgba(246, 218, 218, 1);
 }

@@ -60,10 +60,10 @@ close.addEventListener("click", function(evt) {
 form.addEventListener("submit", function(evt) {
     if (!login.value) {
         evt.preventDefault();
-        login.classList.add("ivalid");
+        login.classList.add("invalid");
     } else if (!email.value) {
         evt.preventDefault();
-        email.classList.add("ivalid");
+        email.classList.add("invalid");
     } else {
         if (isStorageSupportLogin) {
             localStorage.setItem("login", login.value);
