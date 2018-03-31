@@ -649,19 +649,15 @@ a {
     padding-right: 20px;
     background-color: rgba(0, 0, 0, 0);
     outline: none;
+
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
     transform: scale(0.5);
 }
 
 .slide-switcher.current {
-    /* border: none;
-    width: 25px;
-    height: 25px; */
     background-image: url("../img/slider/slider-button.svg"),
                       url("../img/slider/slider-button-empty.svg");
-    /* background-repeat: no-repeat;
-    background-position: 50% 50%;
-    padding-right: 10px;
-    background-color: rgba(0, 0, 0, 0); */
 }
 
 /* Популярное */
@@ -2125,6 +2121,9 @@ a:focus .button-copyright {
     display: -ms-flexbox;
     display: flex;
 
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 }
 
