@@ -126,6 +126,11 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
 
 .user-menu-item {
@@ -222,6 +227,11 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1771,6 +1781,11 @@ a:focus .button-copyright {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
 
     margin-right: auto;
 }
