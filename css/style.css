@@ -91,6 +91,11 @@ a {
     padding: 0 60px;
 }
 
+.main-menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 .main-menu-top {
     margin-bottom: 15px;
 }
@@ -427,7 +432,7 @@ a {
     display: none;
 }
 
-.site-menu-item:hover ul.catalog-menu.catalog-menu-off {
+.site-menu-item:hover div.catalog-menu.catalog-menu-off {
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
@@ -2005,7 +2010,7 @@ a:focus .button-copyright {
 .pagination-numbers {
     width: 90px;
     margin-left: 10px;
-    
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2018,6 +2023,9 @@ a:focus .button-copyright {
 .pagination-item {
     padding-top: 23px;
     padding-bottom: 23px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .pagination-item-back a {
