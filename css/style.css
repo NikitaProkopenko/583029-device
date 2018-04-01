@@ -97,7 +97,8 @@ a {
 }
 
 .main-menu-top {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
+    margin-left: -2px;
 }
 
 .main-menu-center {
@@ -109,7 +110,7 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between;
 
-    margin-bottom: 30px;
+    margin-bottom: 34px;
 
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -117,7 +118,7 @@ a {
 }
 
 .main-menu-bottom {
-    margin-bottom: 160px;
+    margin-bottom: 163px;
 }
 
 .main-menu-bottom-catalog {
@@ -141,8 +142,8 @@ a {
 .user-menu-item {
     position: relative;
     display: inline-block;
-    padding-left: 25px;
-    margin-right: 20px;
+    padding-left: 20px;
+    margin-right: 43px;
     text-align: end;
     letter-spacing: 0.01em;
 }
@@ -217,11 +218,17 @@ a {
 
 .user-menu-item:last-child {
     margin-right: 0;
+    padding-left: 23px;
 }
 
 .user-menu-item:first-child {
     margin-right: auto;
+    padding-left: 26px;
     text-align: start;
+}
+
+.user-menu-item:nth-child(2) {
+    margin-right: 40px;
 }
 
 .site-menu {
@@ -250,7 +257,7 @@ a {
 
 .site-menu-item {
     position: relative;
-    padding-right: 25px;
+    padding-right: 29px;
 }
 
 .site-menu-first-list {
@@ -293,6 +300,10 @@ a {
     text-align: end;
 }
 
+.site-menu-second-item:nth-child(2) {
+    margin-left: -6px;
+}
+
 .site-menu-second-item:first-child {
     text-align: start;
 }
@@ -331,7 +342,7 @@ a {
 
     width: 340px;
     padding: 0 10px;
-    padding-left: 30px;
+    padding-left: 38px;
     background-color: rgba(247, 226, 150, 1);
     border: 2px solid rgba(0, 0, 0, 0);
 }
@@ -468,7 +479,7 @@ a {
 }
 
 .slide {
-    margin: 0 0 100px 0;
+    margin: 0 0 107px 0;
     padding: 0;
 }
 
@@ -484,6 +495,10 @@ a {
     justify-content: space-between;
 }
 
+.slide-item img {
+    margin-top: -11px;
+}
+
 .slide-item-info {
     width: 500px;
 }
@@ -491,18 +506,19 @@ a {
 .slide-white-line {
     width: 100px;
     height: 8px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 26px;
+    margin-bottom: 30px;
     background-color: rgba(255, 255, 255, 1);
 }
 
 .slide-title {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding: 5px 0 0 0;
     position: relative;
     font-size: 47px;
     line-height: 56px;
+    letter-spacing: 0.01em;
     z-index: 1;
 }
 
@@ -511,7 +527,7 @@ a {
     top: 0;
     right: 0;
     letter-spacing: 0.01em;
-    margin-top: -25px;
+    margin-top: -24px;
     margin-right: -0.07em;
     color: white;
     z-index: 0;
@@ -519,10 +535,11 @@ a {
 
 .slide-description {
     font-family: "Open Sans Light", Arial, sans-serif;
+    width: 481px;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.01em;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
 }
 
 .slide-number {
@@ -601,7 +618,8 @@ a {
 }
 
 .features {
-    margin-top: 40px;
+    margin-top: 44px;
+    margin-left: -4px;
 }
 
 .features-info {
@@ -615,11 +633,22 @@ a {
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 13px;
     line-height: 20px;
-    padding-right: 80px;
+    padding-top: 4px;
+    padding-left: 3px;
+    padding-right: 70px;
+}
+
+.features-item:nth-child(2) {
+    padding-left: 9px;
+}
+
+.features-info:nth-child(2) {
+    padding-left: 8px;
 }
 
 .features-info:last-child,
 .features-item:last-child {
+    padding-left: 7px;
     padding-right: 0;
 }
 
@@ -629,7 +658,7 @@ a {
     display: flex;
 
     margin: 0;
-    padding: 10px 18px;
+    padding: 5px 18px;
     position: absolute;
     top: 305px;
     right: 0;
@@ -637,6 +666,11 @@ a {
 
 .slide-switcher-item {
     padding: 0 2px;
+}
+
+.slide-switcher-item:last-child {
+    margin-left: 4px;
+    margin-right: -4px;
 }
 
 .slide-switcher {
@@ -679,7 +713,7 @@ a {
     -ms-flex-align: center;
     align-items: center;
 
-    margin:0 0 30px 0;
+    margin:0 0 32px 0;
     padding:0;
     width: 160px;
     height: 160px;
@@ -733,6 +767,21 @@ a {
     margin-right: 0;
 }
 
+.popular-item-description {
+    width: 125px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.popular-item:nth-child(4) span.popular-item-description {
+    width: 157px;
+}
+
+.popular-item:nth-child(3) img,
+.popular-item:nth-child(5) img {
+    padding-left: 6px;
+}
+
 /*  Сервисы */
 
 .services {
@@ -762,7 +811,7 @@ a {
 }
 
 .services-switcher-item {
-    width: 280px;
+    width: 276px;
     margin-bottom: 20px;
 }
 
@@ -783,8 +832,8 @@ a {
 }
 
 .services-item img {
-    margin-right: 70px;
-    padding-top: 10px;
+    margin-right: 65px;
+    padding-top: 17px;
 }
 
 .services-list {
@@ -810,7 +859,7 @@ a {
 }
 
 .services-title {
-    margin: 0 0 30px 0;
+    margin: -3px 0 30px 0;
     padding: 0;
     font-size: 47px;
     line-height: 48px;
@@ -818,12 +867,12 @@ a {
 }
 
 .services-description {
-    margin: 0;
+    margin: 0 0 0 -3px;
     padding: 0;
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
 }
 
 .services-button {
@@ -891,7 +940,7 @@ a {
 
 .services-button:focus,
 .services-button.active {
-    width: 248px;
+    width: 260px;
     text-align: left;
     padding-left: 38px;
     color: rgba(247, 225, 132, 1);
@@ -914,9 +963,13 @@ a {
     rgba(0, 0, 0, 1) 100%);
 }
 
+.services-button.active {
+    padding-left: 20px;
+}
+
 .services-background {
     margin-top: -218px;
-    margin-bottom: 100px;
+    margin-bottom: 93px;
     height: 288px;
     background-color: rgba(229, 229, 229, 1);
 }
@@ -924,7 +977,7 @@ a {
 /* Логотипы */
 
 .product-logos {
-    margin-bottom: 90px;
+    margin-bottom: 93px;
 }
 
 .product-logos-list {
@@ -941,10 +994,14 @@ a {
 }
 
 .product-logos-item {
-    padding-right: 40px;
+    padding-right: 66px;
     position: relative;
     width: 240px;
     height: 100px;
+}
+
+.product-logos-item:nth-child(4) {
+    margin-right: 30px;
 }
 
 .logo-dji::before,
@@ -1000,7 +1057,7 @@ a {
 /* O нас и Контакты */
 
 .contacts-info-block {
-    margin-bottom: 80px;
+    margin-bottom: 78px;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1015,7 +1072,7 @@ a {
     width: 80px;
     height: 7px;
     background-color: rgba(0, 0, 0, 1);
-    margin-bottom: 40px;
+    margin-bottom: 43px;
 }
 
 /* О нас */
@@ -1025,7 +1082,7 @@ a {
 
 .info-title,
 .contacts-title {
-    margin: 0 0 50px 0;
+    margin: 0 0 43px 0;
     font-size: 47px;
     line-height: 48px;
     letter-spacing: 0.01em;
@@ -1037,6 +1094,7 @@ a {
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 0.01em;
+    width: 460px;
 }
 
 .info-description-first {
@@ -1044,13 +1102,15 @@ a {
 }
 
 .info-description-second {
-    margin: 0 0 40px 0;
+    margin: 0 0 75px 0;
+    width: 481px;
 }
 
 .info-list {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
-    margin: 0 0 60px 0;
+    letter-spacing: 0.01em;
+    margin: 0 0 62px 0;
     padding: 0;
     list-style: circle inside;
 }
@@ -1061,6 +1121,11 @@ a {
 
 .info-item:last-child {
     padding-bottom: 0;
+}
+
+.info-item span {
+    position: relative;
+    left: 12px;
 }
 
 .button {
@@ -1160,7 +1225,7 @@ a {
 }
 
 .contacts img {
-    margin-bottom: 60px;
+    margin-bottom: 63px;
 }
 
 /* Футер */
@@ -1185,7 +1250,7 @@ a {
     -ms-flex-align: center;
     align-items: center;
 
-    margin-bottom: 25px;
+    margin-bottom: 21px;
 }
 
 .footer-middle {
@@ -1248,7 +1313,7 @@ a:focus.footer-logo {
     line-height: 30px;
 }
 .footer-user-menu {
-    margin: -10px 0 0 0;
+    margin: -14px 0 0 0;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1262,11 +1327,12 @@ a:focus.footer-logo {
 .footer-user-menu-item {
     position: relative;
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 43px;
     text-align: end;
     letter-spacing: 0.01em;
-    padding-left: 25px;
+    padding-left: 20px;
 }
+
 
 .login-footer,
 .compare-footer,
@@ -1274,12 +1340,12 @@ a:focus.footer-logo {
     fill: #ffc600;
 }
 
-.footer-user-menu-item:last-child {
-    margin-right: 0;
+.footer-user-menu-item:first-child {
+    padding-left: 26px;
 }
 
-.footer-user-menu-item svg {
-    padding-right: 13px;
+.footer-user-menu-item:last-child {
+    margin-right: 0;
 }
 
 .footer-user-menu-item a {
