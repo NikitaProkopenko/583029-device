@@ -212,7 +212,7 @@ a {
 }
 
 .logout {
-    padding-left: 20px;
+    padding-left: 16px;
     opacity: .3;
 }
 
@@ -1563,8 +1563,9 @@ a:focus .button-copyright {
 .page-title {
     font-size: 47px;
     line-height: 48px;
-    margin: 0 0 20px 0;
-    padding: 40px 60px 0 60px;
+    letter-spacing: 0.01em;
+    margin: 0 0 23px 0;
+    padding: 37px 60px 0 60px;
 }
 
 .breadcrumbs {
@@ -1582,7 +1583,8 @@ a:focus .button-copyright {
     font-family: "Open Sans Light", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
-    padding-right: 40px;
+    letter-spacing: 0.01em;
+    padding-right: 38px;
     color: rgba(0, 0, 0, .3);
 }
 
@@ -1611,7 +1613,7 @@ a:focus .button-copyright {
 }
 
 .filter {
-    width: 300px;
+    width: 269px;
     margin-left: 60px;
     padding-top: 70px;
     background-color: #efefef;
@@ -1626,8 +1628,9 @@ a:focus .button-copyright {
 .filter-title,
 .sort-title {
     margin: 0;
-    padding-top: 27px;
+    padding-top: 24px;
     padding-bottom:  20px;
+    padding-left: 2px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2em;
@@ -1635,11 +1638,11 @@ a:focus .button-copyright {
 }
 
 .sort-title {
-    margin-right: 40px;
+    margin-right: 53px;
 }
 
 .filter-title {
-    width: 300px;
+    width: 267px;
     margin-left: 60px;
     background-color: #dcdcdc;
 }
@@ -1659,7 +1662,7 @@ a:focus .button-copyright {
     line-height: 24px;
     letter-spacing: 0.01em;
     margin: 0;
-    padding: 13px 0 0 0;
+    padding: 12px 0 0 0;
 }
 
 .filter-option,
@@ -1671,8 +1674,8 @@ a:focus .button-copyright {
 
 .filter-option,
 .filter-option-radio {
-    margin-bottom: 30px;
-    padding-left: 35px;
+    margin-bottom: 29px;
+    padding-left: 36px;
 }
 
 .filter-checkbox label,
@@ -1686,14 +1689,14 @@ a:focus .button-copyright {
 
 .range-controls {
     position: relative;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 35px;
+    margin-bottom: 28px;
 }
 
 .range-controls .scale {
     height: 2px;
     background: rgba(219, 219, 219, 1);
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .range-controls .bar {
@@ -1723,11 +1726,11 @@ a:focus .button-copyright {
 }
 
 .range-toggle-min {
-    left: 0;
+    left: -3%;
 }
 
 .range-toggle-max {
-    left: 60%;
+    left: 54%;
 }
 .price-controls {
     font-size: 0;
@@ -1735,7 +1738,7 @@ a:focus .button-copyright {
 
 .price-controls label {
     display: inline-block;
-    width: 50%;
+    width: 44%;
     font-family: "Gilroy Light", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -1835,7 +1838,7 @@ a:focus .button-copyright {
 
 .sort {
     width: 760px;
-    margin-left: 40px;
+    margin-left: 72px;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1917,8 +1920,8 @@ a:focus .button-copyright {
 .catalog {
     width: 760px;
     padding-top: 70px;
-    margin-bottom: 70px;
-    margin-left: 40px;
+    margin-bottom: 77px;
+    margin-left: 70px;
 }
 
 .catalog-list {
@@ -1953,7 +1956,7 @@ a:focus .button-copyright {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 
-    margin-bottom: 35px;
+    margin-bottom: 43px;
     position: relative;
 }
 
@@ -1994,6 +1997,12 @@ a:focus .button-copyright {
     font-size: 18px;
     line-height: 24px;
     max-width: 260px;
+    letter-spacing: 0.01em;
+    margin-top: -2px;
+}
+
+.catalog-item:nth-child(2) span.catalog-item-title {
+    width: 230px;
 }
 
 .catalog-item-price {
@@ -2020,8 +2029,8 @@ a:focus .button-copyright {
     background-image: url("../img/icons/new.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    top: 20px;
-    right: 20px;;
+    top: 30px;
+    right: 15px;
     width: 70px;
     height: 70px;
 }
@@ -2047,7 +2056,7 @@ a:focus .button-copyright {
 /* Кнопки пагинации */
 
 .pagination-list {
-    margin: 0;
+    margin: -5px 0 0 0;
     padding: 0;
     list-style: none;
     background-color: rgba(164, 164, 164, .08);
@@ -2070,8 +2079,9 @@ a:focus .button-copyright {
 }
 
 .pagination-numbers {
-    width: 90px;
-    margin-left: 10px;
+    width: 83px;
+    padding: 2px 0 0 0;
+    margin-left: 4px;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2090,16 +2100,19 @@ a:focus .button-copyright {
     margin: 0;
 }
 
-.pagination-item-back a {
+.pagination-item-back a,
+.pagination-item-forward a {
     display: block;
-    padding: 30px 30px;
+    padding: 22px 30px;
     letter-spacing: 0.2em;
 }
 
 .pagination-item-forward a {
-    display: block;
-    padding: 30px 30px;
-    letter-spacing: 0.2em;
+    padding-right: 26px;
+}
+
+.pagination-item-back a {
+    padding-left: 31px;
 }
 
 .pagination-item-back a:hover,
